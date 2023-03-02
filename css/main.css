@@ -5,12 +5,8 @@
     font-family:'Nunito', sans-serif;
 }
 
-body{
-    background-color: #cfcbcb;
-}
-
 h1 {
-    color: purple;
+    color: #e53170;
     font-size: 50px;
     font-weight: 900;
     text-align: center;
@@ -20,13 +16,13 @@ h1 {
 /* 
 con min width mi allargava il div oltre l'80% e non andava a capo come in foto
 */
-.intro{
+.container{
     font-size: 25px;
     max-width: 80%;
     margin: 1rem auto 3rem auto;
 }
 
-.intro p:first-child {
+.container p:first-child {
     text-align: center;
 }
 
@@ -35,27 +31,48 @@ img {
     height: 9rem;
 }
 .card {
-    background-color: #222;
+    background-color: black;
     height: 9rem;
     float: left;
-    width: 30%;
+    width: 31%;
     text-align: left;
     margin-top: 4rem;
+    color: white;
+    -webkit-box-shadow: 10px -2px 18px 7px rgba(0,0,0,0.56); 
+    box-shadow: 10px -2px 18px 7px rgba(0,0,0,0.56);
 }
 
-main .card:nth-child(3n+0) {
-    background-color: blue;
+.container .card:nth-child(3n+0) {
     float: right;
 }
 
-main .card:nth-child(3n+2) {
-    background-color: aqua;
+.container .card:nth-child(3n+2) {
     float: none;
     display: inline-block;
 
 }
 
 .row{
-    clear: both;
     text-align: center;
+}
+
+.info{
+    padding: 2rem;
+    margin-left: 9rem;
+    font-size: 20px;
+}
+
+.contact{
+    color: #49abd9;
+    text-transform: lowercase;
+}
+
+.name{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.row::after {
+    clear: both;
 }
