@@ -21,8 +21,41 @@ h1 {
 con min width mi allargava il div oltre l'80% e non andava a capo come in foto
 */
 .intro{
-    text-align: center;
-    font-size: 20px;
-    min-width: 80%;
+    font-size: 25px;
+    max-width: 80%;
     margin: 1rem auto 3rem auto;
+}
+
+.intro p:first-child {
+    text-align: center;
+}
+
+img {
+    float: left;
+    height: 9rem;
+}
+.card {
+    background-color: #222;
+    height: 9rem;
+    float: left;
+    width: 30%;
+    text-align: left;
+    margin-top: 4rem;
+}
+
+main .card:nth-child(3n+0) {
+    background-color: blue;
+    float: right;
+}
+
+main .card:nth-child(3n+2) {
+    background-color: aqua;
+    float: none;
+    display: inline-block;
+
+}
+
+.row{
+    clear: both;
+    text-align: center;
 }
